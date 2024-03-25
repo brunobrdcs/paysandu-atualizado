@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --cor-primaria:#A020F0;
+    --cor-titulo:#ffd700;
+    --cor-texto-hover: #A020F0;
+    --cor-borda-hover: #00FF00;
+    --cor-botao-fundo:#000000;
+    --cor-link:#00ff00;
+}
+
+.cabecalho{
+    background-image: url("../assets/imagem-para-fundo-cabecalho2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.cabecalho__links{
+    padding: 4%;
+    display: flex;
+    justify-items: center;   
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.cabecalho__links a{
+    text-decoration: none;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    color: var(--cor-link);
+}
+
+.cabecalho__links a:hover{
+    color: var(--cor-titulo);
+}
+
+.cabecalho__apresentacao{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    align-items: center;
+    justify-content:center;
+    place-items: center;
+}
+
+.cabecalho__imagem{
+    width:75%;
+}
+
+.imagem3d{
+    width:50%;
+}
+
+.cabecalho__frevo{
+    font-family:"Edu NSW ACT Foundation", cursive;
+    font-size: 2em;
+    color:var(--cor-primaria);
+    text-align: center;
+    font-weight: bold;
+}
+.link_texto_titulo{
+    color:var(--cor-titulo);
+    text-decoration: none;
+    padding-bottom: 5%;
+}
+
+.link_texto_titulo:hover{
+color: var(--cor-texto-hover);
+border-style: solid;
+border:2%;
+border-radius: 15px;
+border-color: var(--cor-borda-hover);
+background-color:transparent;
+padding: 1vw;
+}
+
+.paragrafo{
+    margin-top: 5%;
+}
+
+@media(max-width:1481px){
+    .cabecalho__paragrafo{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:1260px){
+    .cabecalho__paragrafo{
+        font-size: 1em;
+    }
+}
+
+@media(max-width:841px){
+    .cabecalho__paragrafo{
+        font-size: 0.5em;
+    }
+}
+
+@media(max-width:422px){
+    .cabecalho__paragrafo{
+        font-size: 0.4em;
+    }
+}
